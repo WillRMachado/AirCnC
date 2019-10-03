@@ -1,6 +1,9 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const routes = require('./routes')
+const cors = require('cors')
+const path = require('path')
+
 
 const app = express()
 
@@ -16,7 +19,9 @@ mongoose.connect('mongodb+srv://AirCnC:HG7ThW1huKrXM0Dh@aircnc-ktl3m.mongodb.net
 
 
 //na URL => /minha/url/aqui:id  (id é um route param e vem da url que esta tentando me acessar)
+app.use(cors())
 app.use(express.json())
+app.use('/files',express.static(path.resolve(__dirname,'..','uploads')))
 app.use(routes)
 
 app.listen(3333)

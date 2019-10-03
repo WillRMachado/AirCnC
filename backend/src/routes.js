@@ -1,5 +1,5 @@
 const express = require('express')
-const multer = require('multer')
+const multer = require('multer') //upload img
 const uploadConfig = require('./config/upload')
 
 const SessionController = require('./controllers/SessionControler')
