@@ -1,0 +1,21 @@
+{
+  "name": "aircnc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go2": "cd frontend && npm run start",
+    "go1":"cd backend && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillRMachado/AirCnC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillRMachado/AirCnC/issues"
+  },
+  "homepage": "https://github.com/WillRMachado/AirCnC#readme"
+}
