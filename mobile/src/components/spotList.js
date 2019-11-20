@@ -50,6 +50,7 @@ function SpotList({ tech, navigation }) {
     );
 }
 
+
 const styles = StyleSheet.create({
     container: {
         marginTop: 30,
