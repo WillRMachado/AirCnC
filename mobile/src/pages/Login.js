@@ -11,8 +11,8 @@ export default function Login({ navigation }) {
     const [email, setEmail] = useState('')
     const [techs, setTechs] = useState('')
 
-
     useEffect(() => {
+        AsyncStorage.removeItem('user')
         AsyncStorage.getItem('user').then(user => {
             user ? navigation.navigate('List') : null
         })
