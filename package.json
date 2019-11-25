@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "go2": "cd frontend && npm run start",
-    "go1": "cd backend && npm run dev"
+    "go1": "cd backend && npm run dev",
+    "go2": "cd frontend && npm start",
+    "go3": "cd mobile && npm start",
+    "go": "(cd mobile && npm start) && (cd ../frontend)",
+    "start": "(cd frontend)"
   },
   "repository": {
     "type": "git",
